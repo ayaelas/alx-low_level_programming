@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	int a;
-	char x;
+	int n;
+	char ch;
 
-	for (a = 48; a < 58;a++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(a);
+		putchar(n);
 	}
 	for (x = 'a'; x <= 'f'; x++)
 	{
@@ -21,5 +21,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
 
