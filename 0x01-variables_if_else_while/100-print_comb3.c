@@ -1,22 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
  */
 int main(void)
 {
-	int y;
+	int a,b;
 
-	for (y = 48; y < 58; y++)
+	for (a = 48; a <= 56; a++)
 	{
-		putchar(b);
-		if (y != 57)
+		for (b = 49; b <= 57; b++)
 		{
-			putchar(',');
-			putchar(' ');
+			if (b > a)
+			{
+				putchar(a);
+				putchar(b);
+				if (a != 56 || b != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
 	return (0);
+}
 }
