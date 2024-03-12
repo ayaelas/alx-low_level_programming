@@ -5,7 +5,7 @@
  * @array: pointer to the first element
  * @size: number of elements
  * @value: value we searh for
- * Return : first element in a array
+ * Return: first element in a array
  */
 int linear_search(int *array, size_t size, int value)
 {
