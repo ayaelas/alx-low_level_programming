@@ -9,31 +9,30 @@
  */
 int dive(int *array, size_t size, int value)
 {
-        size_t in = size / 2;
-        size_t i;
+	size_t in = size / 2;
+	size_t i;
 
-        if (!array || size == 0)
-                return (-1);
+	if (!array || size == 0)
+		return (-1);
 
-        printf("Searching in array");
+	printf("Searching in array");
 
-        for (i = 0; i < size; i++)
-                printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+	for (i = 0; i < size; i++)
+		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
 
-        printf("\n");
+	printf("\n");
 
-        if (in && size % 2 == 0)
-                in--;
+	if (in && size % 2 == 0)
+		in--;
 
-        if (value == array[in])
-                return ((int)in);
+	if (value == array[in])
+		return ((int)in);
 
-        if (value < array[in])
-                return (dive(array, in, value));
+	if (value < array[in])
+		return (dive(array, in, value));
+	in++;
 
-        in++;
-
-        return (dive(array + in, size - in, value) + in);
+	return (dive(array + in, size - in, value) + in);
 }
 
 /**
