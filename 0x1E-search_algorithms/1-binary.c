@@ -5,7 +5,7 @@
  * @array: array needed
  * @size: sze of arr
  * @value: value we search for
- * Return : index needed
+ * Return: index needed
  */
 int dive(int *array, size_t size, int value)
 {
@@ -40,7 +40,7 @@ int dive(int *array, size_t size, int value)
  * @array: pointer to the first element
  * @size: size of arr
  * @value: value we search for
- * Return : return first element of array
+ * Return: return first element of array
  */
 int binary_search(int *array, size_t size, int value)
 {
