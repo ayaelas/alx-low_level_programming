@@ -8,7 +8,6 @@
  *
  * Return: The index of the value in the array, otherwise -1.
  */
-
 int jump_search(int *array, size_t size, int value)
 {
 	size_t index = sqrt(size);
